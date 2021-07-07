@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.contenedor-video{
+	width:100%;
+}.contenedor-texto{
+	width:100%;	
+}.container-fluid .navbar-header .navbar-brand {
+	display: none;
+}

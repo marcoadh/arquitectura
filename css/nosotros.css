@@ -1,0 +1,470 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Syncopate');
+
+*{
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*  Aquí el body */
+
+body{
+	background: url(../imagenes/mainbottom2bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: "Roboto";
+	border-top: 30px solid #303F9F;
+}
+
+/*  Aquí el div-contenedor */
+
+#contenedor{
+	max-width:100%;
+}
+
+/* Aquí empieza Estilo de TODO EL MENÚ --------------------------------------------------------- */
+.wrap{
+	width: 90%;
+	max-width: 1150px;
+	margin: auto;
+}
+header{
+	width: 100%;
+	position: fixed;
+	z-index: 50;
+}
+header .wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+}
+header .btn-menu{
+	font-size: 30px;
+	cursor: pointer;
+}
+/*---- ESTILO de TODO Full Menu ----*/
+.full-menu{
+	position: fixed;
+	top: 0;
+	left: -100%;
+	
+	width: 100%;
+	height: 100vh;
+	background: #292929;
+	
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	
+	z-index: 20;
+}
+.full-menu .wrap{
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.full-menu .wrap .navegacion{
+	flex-basis: 0;
+	flex-grow: 1;
+	
+	display: flex;
+	flex-direction: column;
+}
+.full-menu .wrap .info-usuario{
+	flex-basis: 0;
+	flex-grow: 1;
+	text-align: center;
+}
+.full-menu .navegacion ul{
+	list-style: none;
+}
+.full-menu .navegacion ul li{
+	margin: 20px 0px;
+}
+.full-menu .navegacion ul li a{
+	font-family: 'Century Gothic';
+	text-decoration: none;
+	font-size: 45px;
+	color: #fff;
+}
+.full-menu .navegacion .social-items a{
+	text-decoration: none;
+	font-size: 35px;
+	color: #fff;
+	margin: 25px 20px 0px 5px;
+}
+.full-menu .navegacion ul li a:hover ,.full-menu .navegacion .social-items a:hover {
+	color: aqua;
+}
+.logo-arquit{
+	height: 80px;
+	transition: 1s;
+}
+.menu-principal li{
+	box-shadow: 3px 0 rgba(255,255,255,.2) inset;
+	padding-left: 1.5em;
+	transition: 1s;
+}
+.menu-principal li:hover{
+	box-shadow: 280px 0 rgba(255,255,255,.2) inset;
+	transition: 1s;
+}
+/* Estilos para contenedor de Usuario */
+.info-usuario{
+	color: black;
+}
+.contenedor-usuario{
+	max-width: 280px;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 0px 40px 5px black;
+}
+.contenedor-usuario h2{
+	font-size: 25px;
+	margin-top: -70px;
+	text-align: center;
+	font-weight: bold;
+}
+.sub-titulo{
+	color: #333333;
+	font-weight: 550;
+	font-size: 17px;
+	margin-bottom: 15px;
+	text-decoration: underline;
+	text-align: center;
+	font-family: 'Century Gothic';
+}
+.testimonio{
+	font-size: 12px;
+	color: #3B3B3B;
+	font-family: 'Century Gothic';
+	text-align: justify;
+}
+.foto-usuario{
+	background-image: url(../imagenes/icono-usuario-color.png);
+	background-size: cover;
+	height: 120px;
+	width: 120px;
+	margin: auto;
+	border-radius: 50%;
+	position: relative;
+	top: -80px;
+	box-shadow: 0px 0px 30px -6px black;
+}
+.icon-redes{
+	width: 50px;
+}
+/* Aquí termina Estilo de TODO EL MENÚ --------------------------------------------------------- */
+
+
+/* aqui comienza formulario */
+
+.wrapp {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 0px 3px grey; }
+
+.contenedor-formulario {
+  width: 100%;
+  color: #f2f2f2;
+  padding: 50px; }
+  .contenedor-formulario .formulario {
+    width: 100%;
+    margin: auto; }
+    .contenedor-formulario .formulario .input-group {
+      position: relative;
+      margin-bottom: 32px; }
+      .contenedor-formulario .formulario .input-group input[type="text"],
+      .contenedor-formulario .formulario .input-group input[type="email"],
+      .contenedor-formulario .formulario .input-group input[type="password"] {
+        font-family: "Roboto";
+        font-size: 16px;
+        color: #303F9F;
+        width: 100%;
+        outline: none;
+        padding: 15px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid #BBDEFB; }
+        .contenedor-formulario .formulario .input-group input[type="text"]:focus, .contenedor-formulario .formulario .input-group input[type="text"]:active,
+        .contenedor-formulario .formulario .input-group input[type="email"]:focus,
+        .contenedor-formulario .formulario .input-group input[type="email"]:active,
+        .contenedor-formulario .formulario .input-group input[type="password"]:focus,
+        .contenedor-formulario .formulario .input-group input[type="password"]:active {
+          outline: none;
+          border-bottom: 2px solid #303F9F; }
+        .contenedor-formulario .formulario .input-group input[type="text"].error,
+        .contenedor-formulario .formulario .input-group input[type="email"].error,
+        .contenedor-formulario .formulario .input-group input[type="password"].error {
+          border-bottom: 2px solid #D32F2F; }
+          .contenedor-formulario .formulario .input-group input[type="text"].error + label,
+          .contenedor-formulario .formulario .input-group input[type="email"].error + label,
+          .contenedor-formulario .formulario .input-group input[type="password"].error + label {
+            color: #D32F2F; }
+      .contenedor-formulario .formulario .input-group label {
+        color: #303F9F; }
+        .contenedor-formulario .formulario .input-group label.label {
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          margin-left: 15px;
+          font-size: 16px;
+          line-height: 16px;
+          position: absolute;
+          top: 16px;
+          left: 0; }
+          .contenedor-formulario .formulario .input-group label.label.active {
+            top: -12px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #B6B6B6; }
+      .contenedor-formulario .formulario .input-group.checkbox label, .contenedor-formulario .formulario .input-group.radio label {
+        display: inline-block;
+        cursor: pointer;
+        color: #303F9F;
+        position: relative;
+        padding: 5px 15px 5px 51px;
+        font-size: 1em;
+        border-radius: 3px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .contenedor-formulario .formulario .input-group.checkbox label:hover, .contenedor-formulario .formulario .input-group.radio label:hover {
+          background: #bbdefb; }
+        .contenedor-formulario .formulario .input-group.checkbox label:before, .contenedor-formulario .formulario .input-group.radio label:before {
+          content: "";
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          position: absolute;
+          left: 15px;
+          border-radius: 50%;
+          background: none;
+          border: 2px solid #303F9F; }
+      .contenedor-formulario .formulario .input-group.error label {
+        color: #D32F2F; }
+        .contenedor-formulario .formulario .input-group.error label:hover {
+          background: rgba(211, 47, 47, 0.2); }
+        .contenedor-formulario .formulario .input-group.error label:before {
+          border: 2px solid #D32F2F; }
+      .contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+        display: none; }
+        .contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label:before {
+          display: none; }
+        .contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label {
+          padding: 5px 15px;
+          background: #303F9F;
+          border-radius: 2px;
+          color: #f2f2f2; }
+      .contenedor-formulario .formulario .input-group.checkbox label:before {
+        border-radius: 3px; }
+      .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"] {
+        display: none; }
+        .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label:before {
+          display: none; }
+        .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label {
+          background: #303F9F;
+          color: #f2f2f2;
+          padding: 5px 15px; }
+    .contenedor-formulario .formulario input[type="submit"] {
+      background: #303F9F;
+      border-radius: 1px;
+      border: 2px solid #f2f2f2;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Roboto";
+      font-size: 16px;
+      padding: 15px;
+      width: 100%;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .contenedor-formulario .formulario input[type="submit"]:hover {
+        background: #1976D2; }
+
+
+
+/* aqui termina formulario */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aquì comienza seccion logo-cliente*/
+.contenedor-logo{
+	padding: 6px;
+	margin: 20px auto;
+}
+.logocliente{
+	display: block;
+	margin: auto;
+}
+.titulo-logo{
+	padding-top: 25px;
+	text-align: center;
+	font-family: 'Syncopate', sans-serif;
+	font-size: 40px;
+}
+.buttom{
+	display: block;
+	margin: auto;
+}
+/* Aquì TERMINA seccion logo-cliente*/
+
+
+/* Aquí comienza el Footer */
+.footer-negro{
+	background: #292929;
+	color: white;
+}
+.seccion-footer1{
+	margin-top: 15px;
+}
+.contenedor-icondato{
+	margin: auto 200px;
+}
+.seccion-icondato{
+	overflow: hidden;
+	align-content: center;
+}
+.iconos-peque{
+	margin-left: 100px;
+}
+.iconos-peque,.datito{
+	float: right;
+	margin-left: 6px;
+	font-family: 'Century Gothic';
+}
+.footer-derechos{
+	margin: auto 40px;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Century Gothic';
+	color: azure;
+}
+.h2{
+	font-family: 'Century Gothic';
+	color: antiquewhite;
+	font-size: 30px;
+	margin: 12px auto;
+	text-align: center;
+}
+.logos{
+	text-align: center;	
+}
+.footer-redes{
+	margin: 10px;
+}
+/*Aquí es donde termina el footer*/
+
+/*------------------------------------------- main y menu responsive -------------------------------------------*/
+
+@media screen and (max-width: 750px){
+	.main{
+		transition: 2s;
+	}
+	
+	/* Full menu */
+	.full-menu .navegacion ul li a{
+		font-size: 33px;
+		transition: 2s;
+	}
+	
+	.full-menu .info-usuario p{
+		font-size: 14px;
+		font-weight: 400;
+		transition: 2s;
+	}
+	.logo-arquit{
+		width: 40%;
+		transition: 1s;
+	}
+	.menu-principal li:hover{
+		box-shadow: 185px 0 rgba(255,255,255,.2) inset;
+		transition: 1s;
+	}
+}
+@media screen and (max-width: 540px){
+	.full-menu .info-usuario{
+		display: none;
+	}
+	.full-menu .navegacion{
+		justify-content: center;
+		text-align: center;
+	}
+	.full-menu .navegacion .social-items a{
+		margin: 0 15px;
+	}
+	.logo-arquit{
+		width: 50%;
+		height: 80px;
+		transition: 2s;
+	}
+	.menu-principal li:hover{
+		box-shadow: 300px 0 rgba(255,255,255,.2) inset;
+		transition: 1s;
+	}
+	.container-fluid-slider{
+		display: none;
+	}
+}
+@media screen and (max-width: 450px){
+	.logo-arquit{
+		width: 85%;
+		height: 80px;
+		transition: 2s;
+	}
+	.menu-principal li:hover{
+		box-shadow: 300px 0 rgba(255,255,255,.2) inset;
+		transition: 1s;
+	}
+}
+@media screen and (max-width: 340px){
+	.main{
+	}
+	.logo-arquit{
+		width: 85%;
+		height: 80px;
+		transition: 2s;
+	}
+	.btn-menu{
+		margin: 0 0 6px 0;
+	}
+	.menu-principal li:hover{
+		box-shadow: 260px 0 rgba(255,255,255,.2) inset;
+		transition: 1s;
+	}
+}
